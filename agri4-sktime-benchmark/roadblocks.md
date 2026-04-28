@@ -27,3 +27,11 @@ ran for 48+ minutes without completing.
 Fix: Subsample to 5000 points for demonstration purposes.
 Real project will need either subsampling strategy or 
 a more scalable detection algorithm.
+
+## Roadblock 6 — STRAY has no predict() method
+STRAY detector in sktime throws AttributeError when calling 
+.predict() — the standard sktime detector interface method.
+This breaks the standard detector API contract where all 
+detectors should implement fit/predict.
+Potential PR: Implement predict() method in STRAY or fix 
+the API inconsistency and add to documentation.
