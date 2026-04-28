@@ -1,0 +1,6 @@
+sktime
+pandas
+numpy
+matplotlib
+seaborn
+jupyter
